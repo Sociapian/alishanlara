@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Alishaan</title>
+  <title>Distributor | Alishaan</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
    <!-- Option 1: Include in HTML -->
@@ -22,7 +22,7 @@
 <!-- Banner -->
 <section>
     <div class="common-banner">
-      <img class="w-100" src={{ asset("imgs/distributor-banner.png")}} />
+      <img class="w-100" src={{ asset("imgs/distributor-banner.jpg")}} />
     </div>
   </section>
   <!-- Banner -->
@@ -43,6 +43,7 @@
               <input type="text" name="fullName" placeholder="Full Name" class="form-input" />
               <input type="email" name="email" placeholder="Email" class="form-input" />
               <input type="text" name="contact" placeholder="Contact Number" class="form-input" />
+              <input type="text" name="compname" placeholder="Company Name" class="form-input" />
               <textarea name="message" placeholder="Message" class="form-input textarea"></textarea>
               <button type="submit" class="submit-button">Send Us</button>
             </form>

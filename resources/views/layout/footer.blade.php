@@ -1,8 +1,8 @@
-<section class="footer-section">
+<section class="footer-section footer-border">
     <div class="footer-container">
       <div class="footer">
         <img src={{ asset("imgs/footer-bg.png")}} />
-        <img src={{ asset("imgs/footer-logo.png")}} />
+        <img src={{ asset("imgs/footer-logo.png")}} class= footer-c2 />
       </div>
       <div class="footer footer-content">
         <p>Experience the exquisite flavor of our premium rice, where each grain is a celebration of quality. Sourced
@@ -26,15 +26,20 @@
           Privacy Policy
         </a>
         <p>
-          <a href="" #><i class="fa-brands fa-facebook"></i></a>
-          <a href="" #><i class="fa-brands fa-linkedin"></i></a>
-          <a href="" #><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="" #><i class="fa-brands fa-youtube"></i></a>
-          <a href="" #><i class="fa-brands fa-instagram"></i></a>
-          <a href="" #><i class="fa-solid fa-phone"></i></a>
+          <a href="https://www.facebook.com/alishaan.rice/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/alishaan-foods/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com/@alishaanbasmatirice"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/alishaan_basmati_rice/"><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-solid fa-phone"></i></a>
         </p>
         <p><a href="#">Copyright 2024. All Rights Reserved.</a></p>
       </div>
     </div>
 
   </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>

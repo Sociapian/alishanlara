@@ -6,6 +6,8 @@
   <title>About Us | Alishaan</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AIO Animation-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!-- Option 1: Include in HTML -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -22,7 +24,7 @@
   <!-- Banner -->
   <section>
         <div class="common-banner">
-            <img class="w-100" src={{ asset("imgs/productBanner.png")}} />
+            <img class="w-100" src={{ asset("imgs/superba-banner.jpg")}} />
         </div>
     </section>
     <!-- Banner -->
@@ -30,13 +32,13 @@
     <!-- our Basmati Range -->
 
     <section class="whyChooseUsRb">
-        <div class="why-us-rb">
+        <div class="why-us-rb" data-aos="fade-up">
             <p class="text-center text-white">
                 <span class="custom-text text-capitalize">OUR BASMATI RANGE</span>
             </p>
             <hr>
         </div>
-        <div class="why-us-content">
+        <div class="why-us-content" data-aos="fade-up">
             <p>
                 Grown in the foothills of misty Himalayas and nurtured by pristine snow-fed Ganges, Alishaan Basmati
                 Rice gives your palate a delicate Indian concoction. This culinary magic comes to you after a lot of
@@ -58,46 +60,67 @@
         <div class="container">
             <div class="row justify-content-center gap-3">
                 <!-- Card 1 -->
-                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards">
-                    <div class="whyus-products text-center">
-                        <h3 class="mb-3">Superba Basmati Rice</h3>
-                        <img src={{ asset("imgs/product01.png")}} alt="Superba Basmati Rice" class="product-img">
-                    </div>
+                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards" data-aos="zoom-in">
+                        <div class="whyus-products text-center">
+                            <a href="/superba" class="text-decoration-none">
+                                <h3 class="mb-3">Superba Basmati Rice</h3>
+                                <img src={{ asset("imgs/product01.png")}} alt="Superba Basmati Rice" class="product-img">
+                            </a>
+                        </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards">
+                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards" data-aos="zoom-in">
                     <div class="whyus-products text-center">
-                        <h3 class="mb-3">XL SELLA BASMATI RICE</h3>
-                        <img src={{ asset("imgs/product02.png")}} alt="XL SELLA BASMATI RICE" class="product-img">
+                        <a href="/aroma-traditional" class="text-decoration-none">
+                            <h3 class="mb-3">Aroma Traditional Basmati Rice</h3>
+                            <img src={{ asset("imgs/product02.png")}} alt="XL SELLA BASMATI RICE" class="product-img">
+                        </a>    
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards">
+                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards" data-aos="zoom-in">
                     <div class="whyus-products text-center">
-                        <h3 class="mb-3">Daily BASMATI RICE</h3>
-                        <img src={{ asset("imgs/product03.png")}} alt="Superba Basmati Rice" class="product-img">
+                        <a href="/delight" class="text-decoration-none">
+                            <h3 class="mb-3">Delight Indian Basmati Rice</h3>
+                            <img src={{ asset("imgs/product03.png")}} alt="Superba Basmati Rice" class="product-img">
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="row justify-content-center gap-3">
                 <!-- Card 4 -->
-                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards">
+                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards" data-aos="zoom-in">
                     <div class="whyus-products text-center">
-                        <h3 class="mb-3">Daily BASMATI RICE</h3>
-                        <img src={{ asset("imgs/product04.png")}} alt="Superba Basmati Rice" class="product-img">
+                        <a href="/daily-long-grain" class="text-decoration-none">
+                            <h3 class="mb-3">Daily Long Grain Basmati Rice</h3>
+                            <img src={{ asset("imgs/product04.png")}} alt="Superba Basmati Rice" class="product-img">
+                        </a>
                     </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards">
+                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards" data-aos="zoom-in">
                     <div class="whyus-products text-center">
-                        <h3 class="mb-3">Daily BASMATI RICE</h3>
-                        <img src={{ asset("imgs/product05.png")}} alt="Superba Basmati Rice" class="product-img">
+                        <a href="/xlindian" class="text-decoration-none">
+                            <h3 class="mb-3">XL Indian Basmati Rice</h3>
+                            <img src={{ asset("imgs/product05.png")}} alt="Superba Basmati Rice" class="product-img">
+                        </a>
                     </div>
                 </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 col-sm-6 mb-4 d-flex justify-content-center product-cards" data-aos="zoom-in">
+                    <div class="whyus-products text-center">
+                        <a href="/brown-rice" class="text-decoration-none">
+                            <h3 class="mb-3">Brown Basmati Rice</h3>
+                            <img src={{ asset("imgs/brown-rice.png")}} alt="Superba Basmati Rice" class="product-img">
+                        </a>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>

@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | Alishaan</title>
+  <title>Contact Us | Alishaan</title>
+  <!-- Toastr CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
    <!-- Option 1: Include in HTML -->
@@ -16,37 +19,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href={{ asset("css/style.css")}}>
+  <link rel="stylesheet" href={{ asset("css/Responsive/contact.css")}}>
 </head>
 <body>
   @include('layout.header')
   <!-- Banner -->
   <section>
         <div class="common-banner">
-            <img class="w-100" width="1440" src={{ asset("imgs/contactBanner.png")}} />
+            <img class="w-100" width="1440" src={{ asset("imgs/contact-us-banner.jpg")}} />
         </div>
     </section>
     <!-- Banner -->
 
-    <!-- be a distributor -->
+    <!-- contact -->
 
     <section class="contact-section">
         <div class="container-fluid">
-            <div class="being-right mb-5">
-                <span>Contact</span><img src={{ asset("imgs/Alishaan-head.png")}} class="ms-3" alt="alishan">
-                <hr class="distributor-line mb-4" />
-            </div>
+            
             <div class="row">
                 <div class="col-md-6 contact-form-data">
-                    <form class="mb-4">
-                        <input type="text" name="fullName" placeholder="Full Name" class="form-input-contact" />
-                        <input type="email" name="email" placeholder="Email" class="form-input-contact" />
-                        <input type="text" name="contact" placeholder="Contact Number" class="form-input-contact" />
-                        <textarea name="message" placeholder="Message" class="form-input-contact textarea"></textarea>
-                        <button type="submit" class="submit-button">Send Us</button>
-                    </form>
+                <div class="contact-right mt-5 mb-5">
+                    <span>Contact</span><img src={{ asset("imgs/Alishaan-head.png")}} class="ms-3" alt="alishan">
+                    <hr class="distributor-line mb-4" />
+                </div>
+                <form class="mb-4" action="{{ route('submit.query') }}" method="POST">
+                    @csrf
+                    <input type="text" name="fullName" placeholder="Full Name" class="form-input-contact" />
+                    <input type="email" name="email" placeholder="Email" class="form-input-contact" />
+                    <input type="text" name="contact" placeholder="Contact Number" class="form-input-contact" />
+                    <textarea name="message" placeholder="Message" class="form-input-contact textarea"></textarea>
+                    <button type="submit" class="submit-button">Send Us</button>
+                </form>
+
                 </div>
                 <div class="col-md-6">
-                    <img src={{ asset("imgs/contact-image.png")}} alt="contact us" class="contact-image" />
+                    <img src={{ asset("imgs/contact-image.jpg")}} alt="contact us" class="contact-image" />
                 </div>
             </div>
         </div>
@@ -69,6 +76,9 @@
         </div>
     </section>
   @include('layout.footer')
+  <!-- Toastr JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src={{ asset("js/custom.js")}}></script>

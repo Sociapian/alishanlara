@@ -9,13 +9,15 @@
    <!-- Option 1: Include in HTML -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- AIO Animation-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- gogle fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href={{ asset("css/style.css")}}>
+  <link rel="stylesheet" href={{ asset("css/Responsive/about.css")}}>
 </head>
 <body>
   @include('layout.header')
@@ -30,39 +32,33 @@
   <!-- being alishaan -->
   <section class="about-alishan h-100">
     <div class="container-fluid">
-      <div class="row">
+    <div class="row align-items-center flex-column-reverse flex-lg-row">
         <!-- Descriptive Text -->
-        <div class="col-lg-6 being-right-about">
-          <span>BEING</span><img src={{ asset("imgs/Alishaan-head.png")}} class="ms-3" alt="alishan">
+        <div class="col-lg-6 being-right-about" data-aos="fade-right">
+          <span>BEING</span><img src={{ asset("imgs/Alishaan-head.png")}} class="ms-3 alishaan-head" alt="alishan">
           <hr>
-          <p class="mt-5">“There is no love sincerer than the love of food.”― George Bernard Shaw”</p>
-          <p class="mt-3">
-            At Alishaan we savor a legacy that has a grain of tradition, the culture of purity, and the value of
+          <p class="title-content">“There is no love sincerer than the love of food.”― George Bernard Shaw”</p>
+          <p class="desc-content1">
+            At Alishaan, we savor a legacy that has a grain of tradition, the culture of purity, and the value of
             exclusivity. Our profound legacy of over 40 years coupled with the best milling and production practices
-            bring to you, not just the finest varieties of <a href="#" class="text-white">Superba</a>, <a href="#"
-              class="text-white">XL Sella</a>, <a href="#" class="text-white">Delight</a>,<a href="#"
-              class="text-white"> Aroma A1</a>, <a href="#" class="text-white">Brown Basmati Rice</a>, but the finest
+            bring to you, not just the finest varieties of <a href="/product-details" class="text-white">Superba</a>, <a href="#"
+              class="text-white">XL Sella</a>, <a href="/product-details" class="text-white">Delight</a>,<a href="/product-details"
+              class="text-white"> Aroma A1</a>, <a href="/product-details" class="text-white">Brown Basmati Rice</a>, but the finest
             dining experience. </p>
-          <p class="mt-3">Born in the lap of the Himalayas and nurtured with the holy Ganges river,<a href="#"
-              class="text-white"> each grain of Alishaan</a> is a culinary delight. Careful seed selection and the best
+          <p class="mt-3 desc-content1">Born in the lap of the Himalayas and nurtured with the holy Ganges river,<a href="#"
+              class="text-white"> each grain of Alishaan</a> is a culinary delight. Careful seed selection and the best
             farming practices ensure the longest and the most aromatic grains that are pure, full of flavor, and fluffy.
             The state-of-the-art multi-level processing ensures a salubrious aroma, a delectable taste, and immaculately
             clean rice.</p>
         </div>
 
-        <div class="col-lg-6 text-center mt-5 rice being-img">
+        <div class="col-lg-6 text-center rice being-img" data-aos="fade-up" data-aos-duration="3000">
           <img src={{ asset("imgs/about-being-bg.png")}} alt="rice image">
         </div>
       </div>
     </div>
   </section>
   <!-- End being alishaan -->
-
-  <!-- Factory  -->
-  <section class="factory-image-container about-alishan">
-    <img src={{ asset("imgs/factory-image.png")}} alt="Factory Image" class="factory-first-image" />
-    <img src={{ asset("imgs/Alishaan_outDoor.png")}} height="100" alt="Outdoor Image" class="factory-second-image" />
-  </section>
 
   @include('layout.footer')
   <!-- Bootstrap JS -->
